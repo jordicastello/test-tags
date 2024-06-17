@@ -6,6 +6,7 @@ int mult(int a, int b) {
 }
 
 int main(int argc, char* argv[]) {
-    printf("Here you go: %d\n", mult(4,5));
+    printf("Here you go: ");
+    printf("%d\n", mult(4,5));
     return 0;
 }
