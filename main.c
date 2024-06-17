@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 int mult(int a, int b) {
     int r;
@@ -8,6 +8,12 @@ int mult(int a, int b) {
 }
 
 int main(int argc, char* argv[]) {
-    printf("Here you go: %d\n", mult(4,5));
+    if (argc < 3) {
+        printf("Error: must have 2 params.\n");
+        return -1;
+    }
+    int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
+    printf("Here you go: %d\n", mult(a,b));
     return 0;
 }
